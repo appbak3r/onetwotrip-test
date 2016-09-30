@@ -25,7 +25,7 @@ class Main extends React.Component {
   render () {
     const { fetching, carriers, flights } = this.props
     if (fetching) {
-      return (<div>loading</div>)
+      return (<div className={styles.loading} />)
     } else {
       let currentCarrier = this.state.currentCarrier
 
